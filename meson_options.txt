@@ -1,0 +1,20 @@
+# meson_options.txt
+option('with_boost',
+       type : 'boolean',
+       value : true,
+       description : 'Link with Boost components (system/asio).')
+
+option('use_rsocket',
+       type : 'boolean',
+       value : false,
+       description : 'Enable rsocket adapter if available.')
+
+option('use_websocketpp',
+       type : 'boolean',
+       value : true,
+       description : 'Enable websocketpp adapter (header-only lib).')
+
+option('enable_tests',
+       type : 'boolean',
+       value : true,
+       description : 'Build and run unit tests.')
